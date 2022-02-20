@@ -12,9 +12,12 @@ const gallery_data = fetch("../pages/gallery_data.json")
             card.setAttribute("data-aos", "fade-down");
             card.setAttribute("data-aos-duration", "1000");
             col_card.classList.add("col");
+
             let img = document.createElement("img")
             img.src = data[gallery].image;
-            img.classList.add("card-img-top");
+            img.classList.add("card-img-top", "lazyload");
+            img.setAttribute("data-src", data[gallery].image);
+            
             let card_body = document.createElement("div");
             card_body.classList.add("card-body");
             let card_title = document.createElement("h5");

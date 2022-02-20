@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4",
-    "bootstrap-icons": "^1.8.1"
+    "bootstrap-icons": "^1.8.1",
+    "lazyload": "^2.0.0-rc.2"
   }
 }
