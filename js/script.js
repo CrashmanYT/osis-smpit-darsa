@@ -1,5 +1,6 @@
 // Init AOS
 AOS.init();
+console.log("test");
 
 window.onscroll = function () {
     const navbar = document.getElementsByClassName('navbar')[0];
