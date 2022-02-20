@@ -12,6 +12,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap-icons": "^1.8.1",
+    "jquery": "^3.6.0",
     "lazyload": "^2.0.0-rc.2"
   }
 }
