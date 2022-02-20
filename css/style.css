@@ -1,0 +1,106 @@
+/* box shadow  : offset-x offset-y blur-radius spread-radius color*/
+
+
+/* Add fonts from google font */
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Titillium+Web:wght@600&display=swap');
+
+body {
+    min-height: 5000px;
+}
+
+/* Navbar styles */
+
+.nav-item{
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.25s all;
+    font-style: italic;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+.navbar-brand {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+/* Home Jumbotron styles */
+.jumbotron {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("..\\imgs\\smpit_darsa.jpg");
+    color: whitesmoke;
+    text-align: center;
+    background-size: cover;
+    padding-top: 190px;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed;
+}
+.jumbotron svg {
+    margin-bottom: -10px;
+}
+
+/* Visi & Misi style */
+#visi_misi{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    background-color: #273036;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+
+#visi_misi .card{
+    margin: 50px 70px;
+    box-shadow: 0px 0px 2px 3px #46515c;
+    color: whitesmoke;
+    background-color: #2f373f;
+    border-radius: 10px;
+}
+#susunan_pengurus{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+#susunan_pengurus .card{
+    margin: 50px 20px;
+    box-shadow: 0px 0px 4px 3px gainsboro;
+    color: black;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#susunan_pengurus .row {
+    margin-left: 10%;
+}
+
+
+/* Mobile Style */
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        padding-top: 100px;
+    }
+    .jumbotron svg {
+        margin-bottom: -10px;
+    }
+    #visi_misi .card{
+        margin: 20px;
+        font-size: small;
+    }
+
+    #susunan_pengurus .card{
+        margin: 20px 30px;
+        font-size: small;
+    }
+   
+}
+    
