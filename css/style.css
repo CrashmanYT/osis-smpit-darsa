@@ -3,18 +3,13 @@
 
 /* Add fonts from google font */
 /* Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Titillium+Web:wght@600&display=swap');
-
-body {
-    min-height: 5000px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&family=Titillium+Web:wght@600&display=swap');
 
 /* Navbar styles */
 
 .nav-item{
     font-family: 'Montserrat', sans-serif;
     transition: 0.25s all;
-    font-style: italic;
 }
 
 .nav-item:hover {
@@ -78,8 +73,25 @@ body {
     border-radius: 10px;
 }
 
-#susunan_pengurus .row {
+#susunan_pengurus #presiden_wapres .row {
     margin-left: 10%;
+}
+#susunan_pengurus svg {
+    margin-top: 130px;
+    margin-bottom: -10px;
+}
+
+/* Footer style */
+footer {
+    background-color: #212529;
+    color: whitesmoke;
+}
+
+footer .btn {
+    border-radius: 60px;
+    transition: 0s all;
+    margin-bottom: 16px;
+    margin-left: 2px;
 }
 
 

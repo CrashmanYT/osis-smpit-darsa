@@ -1,7 +1,6 @@
 // Init AOS
 AOS.init();
 console.log("test");
-
 window.onscroll = function () {
     const navbar = document.getElementsByClassName('navbar')[0];
     // if document scrolled, add 'bg-dark' & 'shadow-sm' classes to navbar
