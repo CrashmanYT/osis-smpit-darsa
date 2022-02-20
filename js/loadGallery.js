@@ -23,6 +23,17 @@ const gallery_data = fetch("../pages/gallery_data.json")
             let card_text = document.createElement("p");
             card_text.classList.add("card-text");
             card_text.innerHTML = data[gallery].description;
+            let loading_spinner = document.createElement("div");
+            loading_spinner.classList.add("spinner-border", "text-warning");
+            loading_spinner.setAttribute("role", "status");
+            let loading_text = document.createElement("span");
+            loading_text.classList.add("visually-hidden");
+            loading_text.innerHTML = "Loading...";
+            loading_spinner.appendChild(loading_text);
+            card_body.appendChild(loading_spinner);
+            img.onload = function() {
+                card_body.removeChild(loading_spinner);
+            }
             let card_footer = document.createElement("div");
             card_footer.classList.add("card-footer");
             let text_muted = document.createElement("small");
