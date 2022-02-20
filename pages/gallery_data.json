@@ -1,0 +1,27 @@
+{
+    "post_1": {
+        "title": "LDKS : Materi Dari Kak Dimas",
+        "description": "Kak Dimas sedang menyampaikan materi tentang organisasi",
+        "image": "../imgs/gallery/post_1.jpg",
+        "date": "23 Januari 2022"
+    },
+    "post_2": {
+        "title": "LDKS : Materi Dari Ustadzah Mariani",
+        "description": "Ustadzah Mariani sedang menyampaikan materi tentang kepemimpinan",
+        "image": "../imgs/gallery/post_2.jpg",
+        "date": "21 Januari 2022"
+    },
+    "post_3": {
+        "title": "LDKS: Kelompok Ikhwan",
+        "description": "Kelompok ikhwan sedang mendengarkan materi yang sedang disampaikan oleh Ustadzah Mariani",
+        "image": "../imgs/gallery/post_3.jpg",
+        "date": "21 Januari 2022"
+    },
+    "post_4": {
+        "title": "LDKS: Kelompok Akhwat",
+        "description": "Kelompok akhwat sedang mendengarkan materi yang sedang disampaikan oleh Ustadzah Mariani",
+        "image": "../imgs/gallery/post_4.jpg",
+        "date": "21 Januari 2022"
+    }
+
+}
