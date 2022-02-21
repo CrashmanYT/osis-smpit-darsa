@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // Load navbar
-    $("body").append(`<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" data-aos="fade-up" data-aos-duration="1000">
+    $("body").append(`<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
         <img src="../imgs/logo_osis.png" alt="" width="40">
         <a class="navbar-brand ms-2" href="#">OSIS DARSA</a>

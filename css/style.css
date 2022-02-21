@@ -30,6 +30,7 @@
     margin-top: 30px;
 }
 
+/* Homepage */
 /* Home Jumbotron styles */
 .jumbotron {
     font-family: 'Montserrat', sans-serif;
@@ -103,6 +104,19 @@ footer .btn {
     margin-left: 2px;
 }
 
+/* Gallery */
+.gallery #upload_gallery {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+}
+#upload_gallery_form {
+    margin-left: 9%;
+    margin-top: 70px;
+    border: #46515c solid 1px;
+    border-radius: 30px;
+    padding: 40px;
+    width: 80%;
+}
 
 /* Mobile Style */
 

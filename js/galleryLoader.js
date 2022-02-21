@@ -1,3 +1,4 @@
+
 // Load data from json file
 const gallery_data = fetch("../settings/gallery_data.json")
     .then(function(response) {
@@ -8,8 +9,8 @@ const gallery_data = fetch("../settings/gallery_data.json")
             // create a card for each gallery
                 $(document).ready(function() {
                     $(".row").append(`
-                <div class="col">
-                <div class="card h-100" data-aos="fade-down" data-aos-duration="1000">
+                <div class="col-sm">
+                <div class="card h-100 aos-init" data-aos="fade-down" data-aos-duration="1000">
                 <img src="${data[gallery].image}" class="card-img-top lazyload" data-src="${data[gallery].image}">
                 <div class="card-body">
                 <h5 class="card-title">${data[gallery].title}</h5>
