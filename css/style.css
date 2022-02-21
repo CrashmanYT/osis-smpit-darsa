@@ -75,7 +75,7 @@
     
 }
 #susunan_pengurus .card{
-    margin: 50px 20px;
+    margin: 50px 10px;
     box-shadow: 0px 0px 4px 3px gainsboro;
     color: black;
     background-color: #ffffff;
@@ -83,7 +83,7 @@
 }
 
 #susunan_pengurus #presiden_wapres .row {
-    margin-left: 10%;
+    margin-left: 12%;
 }
 #susunan_pengurus svg {
     margin-top: 130px;
