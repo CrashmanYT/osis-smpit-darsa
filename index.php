@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/aos.css">
   <!-- Original CSS -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./imgs/logo_osis.png" type="image/x-icon">
 
 </head>
 
@@ -30,13 +31,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link" href="#">News</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="./pages/gallery.html">Gallery</a>
+            <a class="nav-link" href="./pages/gallery.php">Gallery</a>
           </li>
         </ul>
       </div>

@@ -21,7 +21,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <!-- Input Form -->
             <div class="col-sm">
-                <form id="upload_gallery_form">
+                <form id="upload_gallery_form" method="POST" action="../db/upload_image.php">
                     <div class="mb-3">
                       <label for="title_field" class="form-label mt-5">Title</label>
                       <input type="email" class="form-control" id="title_field" aria-describedby="emailHelp">
@@ -39,7 +39,6 @@
                         <input type="password" class="form-control" id="auth_field">
                         <div id="emailHelp" class="form-text">Don't share you auth code</div>
                     </div>
-                    
                     <button type="submit" class="btn btn-primary mb-5">Upload</button>
                   </form>
             </div>
@@ -71,7 +70,7 @@
     <!-- Lazy Load Scripts -->
     <script src="../js/lazyload.min.js"></script>
     <!-- Original Scripts -->
-    <script src="../js/loader.js"></script>
+    <script src="../js/UILoader.js"></script>
     <script src="../js/uploadGallery.js"></script>
     <script>
         AOS.init()
