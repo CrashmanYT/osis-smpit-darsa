@@ -25,3 +25,7 @@ image.oninput = function() {
     reader.readAsDataURL(file);
 
 }
+
+function uploadImage() {
+    
+}

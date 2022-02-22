@@ -39,7 +39,6 @@
                         <input type="password" class="form-control" id="auth_field">
                         <div id="emailHelp" class="form-text">Don't share you auth code</div>
                     </div>
-                    
                     <button type="submit" class="btn btn-primary mb-5">Upload</button>
                   </form>
             </div>
