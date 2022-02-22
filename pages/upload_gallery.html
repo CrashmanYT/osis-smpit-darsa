@@ -18,30 +18,39 @@
     <div class="gallery">
         <h1 class="text-center" data-aos="zoom-in" data-aos-duration="2000">Upload New Image</h1>
         
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <!-- Input Form -->
-            <div class="col">
+            <div class="col-sm">
                 <form id="upload_gallery_form">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Title</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="title_field" class="form-label mt-5">Title</label>
+                      <input type="email" class="form-control" id="title_field" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="description_txt" class="form-label">Description</label>
-                        <textarea id="description_txt" placeholder="Description" class="form-control"></textarea>
+                        <label for="description_field" class="form-label">Description</label>
+                        <textarea id="description_field" rows="10" placeholder="Description" class="form-control"></textarea>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Image</label>
+                      <label for="image_chooser" class="form-label">Image</label>
                       <input class="form-control" type="file" id="image_chooser">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Auth Code</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="auth_field" class="form-label">Auth Code</label>
+                        <input type="password" class="form-control" id="auth_field">
                         <div id="emailHelp" class="form-text">Don't share you auth code</div>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Upload</button>
+                    <button type="submit" class="btn btn-primary mb-5">Upload</button>
                   </form>
+            </div>
+            <div class="col-sm">
+                <div class="card h-100 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="../imgs/no-image.png" class="card-img-top lazyload" data-src="../imgs/gallery/post_1.jpg">
+                    <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text">Description</p>
+                    </div>
+                    <div class="card-footer"><small class="text-muted">Date</small></div></div>
             </div>
             <!-- Preview -->
         </div>
@@ -63,6 +72,7 @@
     <script src="../js/lazyload.min.js"></script>
     <!-- Original Scripts -->
     <script src="../js/loader.js"></script>
+    <script src="../js/uploadGallery.js"></script>
     <script>
         AOS.init()
     </script>
