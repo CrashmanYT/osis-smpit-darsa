@@ -19,12 +19,29 @@
     <!-- Gallery -->
     <div class="gallery">
         <h1 class="text-center" data-aos="zoom-in" data-aos-duration="2000">Gallery</h1>
-        <a data-aos="fade-right" data-aos-duration="1000" href="./upload_gallery.html" class="btn btn-outline-dark" id="upload_gallery"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+        <a data-aos="fade-right" data-aos-duration="1000" href="./upload_gallery.php" class="btn btn-outline-dark" id="upload_gallery"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
             <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
             <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
           </svg></a>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            
+            <?php
+                include "../db/connect_db.php";
+
+                $sql = mysqli_query($db, "SELECT * FROM gallery ORDER BY image_date ASC");
+                
+                while ($row = mysqli_fetch_row($sql)) {
+                    echo '
+                    <div class="col-sm">
+                    <div class="card h-100 aos-init" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="../imgs/gallery/'.$row[3].'" class="card-img-top lazyload" data-src="../imgs/gallery/'.$row[3].'">
+                    <div class="card-body">
+                    <h5 class="card-title">'.$row[1].'</h5>
+                    <p class="card-text">'.$row[2].'</p>
+                    </div>
+                    <div class="card-footer"><small class="text-muted">'.$row[4].'</small></div></div></div>';
+                }
+
+            ?>
         </div>
     </div>
     <!-- Gallery End -->
@@ -43,7 +60,6 @@
     <!-- Lazy Load Scripts -->
     <script src="../js/lazyload.min.js"></script>
     <!-- Original Scripts -->
-    <script src="../js/galleryLoader.js"></script>
     <script src="../js/loader.js"></script>
     <script>
         AOS.init()

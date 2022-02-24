@@ -14,29 +14,28 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <div class="gallery">
         <h1 class="text-center" data-aos="zoom-in" data-aos-duration="2000">Upload New Image</h1>
         
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <!-- Input Form -->
             <div class="col-sm">
-                <form id="upload_gallery_form">
+                <form id="upload_gallery_form" method="POST" action="../db/upload_image.php" enctype="multipart/form-data">
                     <div class="mb-3">
                       <label for="title_field" class="form-label mt-5">Title</label>
-                      <input type="email" class="form-control" id="title_field" aria-describedby="emailHelp">
+                      <input name="title_field" type="text" class="form-control" id="title_field" aria-describedby="title_field">
                     </div>
                     <div class="mb-3">
                         <label for="description_field" class="form-label">Description</label>
-                        <textarea id="description_field" rows="10" placeholder="Description" class="form-control"></textarea>
+                        <textarea name="description_field" id="description_field" rows="10" placeholder="Description" class="form-control"></textarea>
                     </div>
                     <div class="mb-3">
                       <label for="image_chooser" class="form-label">Image</label>
-                      <input class="form-control" type="file" id="image_chooser">
+                      <input name="image_chooser" class="form-control" type="file" id="image_chooser">
                     </div>
                     <div class="mb-3">
                         <label for="auth_field" class="form-label">Auth Code</label>
-                        <input type="password" class="form-control" id="auth_field">
+                        <input type="password" name="auth_field" class="form-control" id="auth_field">
                         <div id="emailHelp" class="form-text">Don't share you auth code</div>
                     </div>
                     <button type="submit" class="btn btn-primary mb-5">Upload</button>
