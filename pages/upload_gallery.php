@@ -20,11 +20,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
             <!-- Input Form -->
             <div class="col-sm">
-<<<<<<< HEAD:pages/upload_gallery.php
                 <form id="upload_gallery_form" method="POST" action="../db/upload_image.php" enctype="multipart/form-data">
-=======
-                <form id="upload_gallery_form" method="POST" action="../db/upload_image.php">
->>>>>>> d0f1c43346f9b03f9520d7690139a2ed8d4e806b:pages/upload_gallery.html
                     <div class="mb-3">
                       <label for="title_field" class="form-label mt-5">Title</label>
                       <input name="title_field" type="text" class="form-control" id="title_field" aria-describedby="title_field">

@@ -24,7 +24,6 @@
             <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
           </svg></a>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-<<<<<<< HEAD:pages/gallery.php
             <?php
                 include "../db/connect_db.php";
 
@@ -43,8 +42,6 @@
                 }
 
             ?>
-=======
->>>>>>> d0f1c43346f9b03f9520d7690139a2ed8d4e806b:pages/gallery.html
         </div>
     </div>
     <!-- Gallery End -->
