@@ -61,11 +61,7 @@
     <!-- Lazy Load Scripts -->
     <script src="../js/lazyload.min.js"></script>
     <!-- Original Scripts -->
-<<<<<<< HEAD:pages/gallery.php
     <script src="../js/loader.js"></script>
-=======
-    <script src="../js/galleryLoader.js"></script>
->>>>>>> d0f1c43346f9b03f9520d7690139a2ed8d4e806b:pages/gallery.html
     <script>
         AOS.init()
     </script>
