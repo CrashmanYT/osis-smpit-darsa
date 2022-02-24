@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    // Load favicon
+    $("head").append("<link rel='shortcut icon' href='../imgs/logo_osis.png' type='image/x-icon'>");
+
     // Load navbar
     $("body").append(`<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" data-aos="fade-down" data-aos-duration="1000">
     <div class="container">
@@ -15,7 +18,7 @@ $(document).ready(function(){
                     <a class="nav-link" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="../index.php">News</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="./gallery.php">Gallery</a>

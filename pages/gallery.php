@@ -24,6 +24,7 @@
             <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
           </svg></a>
         <div class="row row-cols-1 row-cols-md-3 g-4">
+<<<<<<< HEAD:pages/gallery.php
             <?php
                 include "../db/connect_db.php";
 
@@ -42,6 +43,8 @@
                 }
 
             ?>
+=======
+>>>>>>> d0f1c43346f9b03f9520d7690139a2ed8d4e806b:pages/gallery.html
         </div>
     </div>
     <!-- Gallery End -->
@@ -56,11 +59,16 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
     <!-- AOs Scripts -->
+    <script src="../js/UILoader.js"></script>
     <script src="../js/aos.js"></script>
     <!-- Lazy Load Scripts -->
     <script src="../js/lazyload.min.js"></script>
     <!-- Original Scripts -->
+<<<<<<< HEAD:pages/gallery.php
     <script src="../js/loader.js"></script>
+=======
+    <script src="../js/galleryLoader.js"></script>
+>>>>>>> d0f1c43346f9b03f9520d7690139a2ed8d4e806b:pages/gallery.html
     <script>
         AOS.init()
     </script>

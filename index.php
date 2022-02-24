@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/aos.css">
   <!-- Original CSS -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./imgs/logo_osis.png" type="image/x-icon">
 
 </head>
 
